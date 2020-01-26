@@ -1,0 +1,15 @@
+export default {
+  loginUrl: () => '/customers/authenticate',
+  fetchLoansListUrl: () => '/customers/current/loans',
+  fetchCustomerDetail: () => '/customers/current',
+  fetchLoanDetail: (loanId) => `/customers/current/loans/${loanId}/status`,
+  fetchLoanTerm: (loanId) => `/customers/current/loans/${loanId}/setup`,
+  fetchTransactionsList: (loanId) => `/customers/current/loans/${loanId}/transactions`,
+  fetchPaymentsList: (loanId) => `/customers/current/loans/${loanId}/payments`,
+  fetchPaymentMethods: () => '/customers/current/paymentaccounts',
+  fetchDocuments: (loanId) => `/customers/current/loans/${loanId}/documents`,
+  downloadDocument : (loanId, documentId, fileName) =>`/customers/current/loans/${loanId}/documents/${documentId}/${fileName}`,
+  removePaymentMethod : (paymentAccountId) => `/customers/current/paymentaccounts/${paymentAccountId}`,
+  fetchUrlPCIWallet : () => '/customers/current/obo-token',
+  putPaymentAccount : () => '/customers/current/paymentaccounts',
+};

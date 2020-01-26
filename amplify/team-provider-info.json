@@ -1,0 +1,38 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "cicd-customer-portal-dev-20200114095414-authRole",
+            "UnauthRoleArn": "arn:aws:iam::307473555792:role/cicd-customer-portal-dev-20200114095414-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::307473555792:role/cicd-customer-portal-dev-20200114095414-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "cicd-customer-portal-dev-20200114095414-deployment",
+            "UnauthRoleName": "cicd-customer-portal-dev-20200114095414-unauthRole",
+            "StackName": "cicd-customer-portal-dev-20200114095414",
+            "StackId": "arn:aws:cloudformation:us-west-2:307473555792:stack/cicd-customer-portal-dev-20200114095414/ba13ee00-3685-11ea-999f-02722f0e300c"
+        }
+    },
+    "stage": {
+        "awscloudformation": {
+            "AuthRoleName": "cicd-customer-portal-stage-20200114140347-authRole",
+            "UnauthRoleArn": "arn:aws:iam::307473555792:role/cicd-customer-portal-stage-20200114140347-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::307473555792:role/cicd-customer-portal-stage-20200114140347-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "cicd-customer-portal-stage-20200114140347-deployment",
+            "UnauthRoleName": "cicd-customer-portal-stage-20200114140347-unauthRole",
+            "StackName": "cicd-customer-portal-stage-20200114140347",
+            "StackId": "arn:aws:cloudformation:us-west-2:307473555792:stack/cicd-customer-portal-stage-20200114140347/96c4b1a0-36a8-11ea-afa9-021df5e6d67a"
+        }
+    },
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "cicd-customer-portal-prod-20200114142846-authRole",
+            "UnauthRoleArn": "arn:aws:iam::307473555792:role/cicd-customer-portal-prod-20200114142846-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::307473555792:role/cicd-customer-portal-prod-20200114142846-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "cicd-customer-portal-prod-20200114142846-deployment",
+            "UnauthRoleName": "cicd-customer-portal-prod-20200114142846-unauthRole",
+            "StackName": "cicd-customer-portal-prod-20200114142846",
+            "StackId": "arn:aws:cloudformation:us-west-2:307473555792:stack/cicd-customer-portal-prod-20200114142846/13c7d6c0-36ac-11ea-b5b0-06c69e594abe"
+        }
+    }
+}

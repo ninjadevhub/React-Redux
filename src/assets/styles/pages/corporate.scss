@@ -1,0 +1,35 @@
+.corporate {
+  .page-dashboard {
+    #StartCTACard {
+      cursor: pointer;
+
+      .card-body {
+        height: auto !important;
+        padding-top: $gutter-md;
+        padding-bottom: $gutter-md;
+      }
+      h3 {
+        max-width: none !important;
+      }
+    }
+
+    #Support .list-group-item {
+      box-shadow: 0 -1px 0 0 rgba(0, 33, 71, 0.075), 0 1px 0 0 rgba(0, 33, 71, 0.075);
+      cursor: pointer;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+  .rdrDateRangePickerWrapper {
+    border-radius: 6px;
+    box-shadow: $box-shadow-dark;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    z-index: 100;
+
+    .rdrDefinedRangesWrapper {}
+  }
+}

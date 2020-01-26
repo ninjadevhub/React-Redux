@@ -1,0 +1,118 @@
+.card {
+  border: 0;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  margin-bottom: $grid-gutter-width;
+  overflow: hidden;
+  transition: all 0.15s linear;
+
+  > .btn {
+    border-radius: $border-radius-lg;
+  }
+
+  > .btn-group {
+    margin: 0 $grid-gutter-width;
+    width: calc(100% - 50px);
+  }
+
+  > .card-body {
+    box-shadow: $box-shadow-headers;
+    margin-left: $grid-gutter-width;
+    padding-left: 0;
+  }
+
+  &[class*='border-'] {
+    border-width: 3px;
+    border-style: solid;
+  }
+
+  &.pull-30 {
+    @include media-breakpoint-up(md) {
+      margin-left: -$grid-gutter-width;
+      margin-right: -$grid-gutter-width;
+    }
+  }
+
+  &.dark-shadow {
+    box-shadow: $box-shadow-dark;
+  }
+
+  &.text-white {
+    .card-header {
+      color: $white;
+    }
+    .card-body {
+      box-shadow: 0 -1px 0 0 rgba($white, 0.15);
+
+      .card {
+        background: rgba($white, 0.15);
+      }
+    }
+
+    h1, h2, h3, h4, h5, h6, small {
+      color: $white;
+
+      small {
+        color: $white;
+        font-size: 60%;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+a.card {
+  &:hover {
+    box-shadow: $box-shadow-dark;
+    text-decoration: none;
+    transform: scale(1.02);
+
+    &.bg-primary {
+      .btn-primary {
+        background-color: darken($primary, 17%) !important;
+      }
+    }
+  }
+}
+
+.card-header {
+  background: none;
+  border: 0;
+  color: $headings-color;
+  font-size: $h5-font-size;
+  font-weight: $headings-font-weight;
+  padding: 0.813rem $grid-gutter-width;
+  position: relative;
+  text-align: center;
+
+  &.has-tooltip {
+    padding-left: $gutter-lg;
+    padding-right: $gutter-lg;
+  }
+
+  .btn-edit {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+
+  .toggle-switch {
+    margin: -3px 0;
+  }
+}
+
+.card-body {
+  padding: $grid-gutter-width;
+
+  &.no-border {
+    box-shadow: none !important;
+  }
+}
+
+.card-footer {
+  background-color: $white;
+}
+
+.border-light {
+  border-color: $gray-200 !important;
+}

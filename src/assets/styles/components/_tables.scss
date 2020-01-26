@@ -1,0 +1,42 @@
+.table {
+  thead {
+    background-color: $table-head-bg;
+  }
+
+  &.table-sm {
+    thead {
+      font-size: $font-size-xs;
+
+      th {
+        padding-bottom: 0.45rem;
+        padding-top: 0.45rem;
+      }
+    }
+
+    tbody {
+      font-size: $font-size-sm;
+
+      tr.clickable-row:hover {
+        cursor: pointer;
+      }
+
+      tr:nth-of-type(even) {
+        background-color: white !important;
+      }
+    }
+  }
+
+  .filter {
+    background: $white url(/icons/filter-grey.svg) 50% 56% no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    margin: -2px 0 -5px;
+    width: 20px;
+
+    &.active {
+      background: $primary url(/icons/filter-white.svg) 50% 56% no-repeat;
+    }
+  }
+}
